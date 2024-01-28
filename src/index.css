@@ -1,7 +1,7 @@
 body {
   background: #111;
   font-family: "Poppins", sans-serif;
-  direction: rtl;
+ 
 }
 
 * {
@@ -27,3 +27,4 @@ input:-moz-autofill:active {
   background: #111 !important;
   color: #fff !important;
 }
+ 

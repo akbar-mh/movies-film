@@ -30,7 +30,7 @@ const App: FC = () => {
                 element={<Layout>{route.element}</Layout>}
               />
             ))}
-            {/* <Route path="*" element={<NotFound />} /> */}
+           
           </Routes>
         </Router>
       </ThemeProvider>

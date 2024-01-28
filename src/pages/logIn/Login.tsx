@@ -315,9 +315,9 @@ const Login: React.FC = () => {
             </Box>
           </Box>
         </form>
-        {/* <Box sx={{ bgcolor: "#181818", display: isTablet ? "none" : "flex", }}>
+     {/*     <Box sx={{ bgcolor: "#181818", display: isTablet ? "none" : "flex", }}>
           <img src={LogoLogin} width={500} height={500} alt="image login" />
-        </Box> */}
+        </Box>  */}
       </Box>
     </Container>
   );
