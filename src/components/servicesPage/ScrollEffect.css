@@ -1,12 +1,11 @@
 .scroll-effect-container {
-                                 
-                                  display: flex;
-                                  justify-content: center;
-                                  align-items: center;
-                                  background-color: #f0f0f0;
-                                }
-                                
-                                .scroll-effect-element {
-                                  text-align: center;
-                                }
-                                
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.scroll-effect-element {
+  text-align: center;
+}

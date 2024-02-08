@@ -2,9 +2,12 @@ import { Box } from "@mui/material";
 
 const Footer = () => {
   return (
-    <Box sx={{ bgcolor: "red", width: "100%", height: "50px" }}>
+    <Box sx={{ bgcolor: "red", display: "flex", justifyContent: "center", width: "100%",}}>
       {/*  <NavMobile/> */}
-      Hrello Footer
+   {/*    Hrello Footer */}
+        <Box sx={{bgcolor: "white", width: "100%"}}>
+          Hello
+        </Box>
     </Box>
   );
 };

@@ -1,7 +1,7 @@
 body {
-  background: #111;
+  background: #025444;
   font-family: "Poppins", sans-serif;
- 
+  box-sizing: border-box;
 }
 
 * {

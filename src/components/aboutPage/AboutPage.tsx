@@ -1,16 +1,24 @@
-import { Box } from "@mui/material"
-import AboutPograph from "./aboutPograph/aboutPograpg"
-
+import { Box, useMediaQuery } from "@mui/material";
+import AboutPograph from "./aboutPograph/aboutPograpg";
+import { motion } from "framer-motion";
+import theme from "../../routes/theme";
 
 const AboutPage = () => {
+  const isTablet = useMediaQuery(theme.breakpoints.down("md"));
+  return (
+    <motion.div initial="hidden" animate="visible">
+      <Box
+        sx={{
+          display: "flex",
+          width: "100%",
+          justifyContent: "center",
+          mt:isTablet ? "15rem" : "10.5rem",
+        }}
+      >
+        <AboutPograph />
+      </Box>
+    </motion.div>
+  );
+};
 
-    return (
-        <Box 
-          sx={{display: "flex" , width: "100%", justifyContent: "center", mt: "1.5rem" }}
-        >
-         <AboutPograph/>
-        </Box>
-    )                              
-}
-
-export default AboutPage
+export default AboutPage;

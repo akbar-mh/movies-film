@@ -14,7 +14,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
     const isTablet = useMediaQuery(theme.breakpoints.down("md"));
 
     return (
-        <Box sx={{ bgcolor: "#212529", display: "flex", flexWrap: "wrap", justifyContent: "space-between", px: isTablet ? "0rem": "2rem" }}>
+        <Box sx={{ bgcolor: "", display: "flex", flexWrap: "wrap", justifyContent: "center",   width: "100%",  }}>
         
               <Header/>
             {children}

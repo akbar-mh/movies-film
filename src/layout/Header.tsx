@@ -18,31 +18,31 @@ const Header = () => {
   const isTablet = useMediaQuery(theme.breakpoints.down("md"));
 
   return (
-    <Box sx={{  width: "100%", position: "fixed" , left: "0", px:isTablet?"0rem" : "2rem" , bgcolor: "#212529"}}>
+    <Box sx={{   width: "100%", position: "fixed" , left: "0", bgcolor: "#025444", zIndex: "999"  , boxShadow: "1px 1px 1px #2EBF70"}}>
        <NavMobile/>
       <Box
         sx={{
-          border: "1px solid red",
+        
           display: isMobile ? "none" : isTablet ? "none" : "flex",
           flexWrap: "wrap",
           justifyContent: "space-around",
           alignItems: "center",
         }}
       >
-        <Box sx={{ display: "flex", width: "50%" , }}>
-          <Box sx={{ display: "flex", width: "100%" }}>
+        <Box sx={{ display: "flex", width: "50%" ,  }}>
+          <Box sx={{ display: "flex", width: "100%" ,  }}>
             <Link
               to="/checklist"
               style={{
                 paddingLeft: 13,
                 textDecoration: "none",
-                color: "#616f8e",
+                color: "#bbc2ce",
               }}
             >
               <Typography
                 sx={{
                   position: "relative",
-                  color: "#616f8e",
+                  color: "#bbc2ce",
                   padding: "0.5rem", // Changed 'p' to 'padding'
                   transition: "color 0.3s",
                   fontSize: "1.1rem",
@@ -85,7 +85,7 @@ const Header = () => {
               <Typography
                 sx={{
                   position: "relative",
-                  color: "#616f8e",
+                  color: "#bbc2ce",
                   p: "0.5rem",
                   transition: "color 0.3s",
                   fontSize: "1.1rem",
@@ -128,7 +128,7 @@ const Header = () => {
               <Typography
                 sx={{
                   position: "relative",
-                  color: "#616f8e",
+                  color: "#bbc2ce",
                   p: "0.5rem",
                   transition: "color 0.3s",
                   fontSize: "1.1rem",
@@ -171,7 +171,7 @@ const Header = () => {
               <Typography
                 sx={{
                   position: "relative",
-                  color: "#616f8e",
+                  color: "#bbc2ce",
                   p: "0.5rem",
                   transition: "color 0.3s",
                   fontSize: "1.1rem",
@@ -214,7 +214,7 @@ const Header = () => {
               <Typography
                 sx={{
                   position: "relative",
-                  color: "#616f8e",
+                  color: "#bbc2ce",
                   p: "0.5rem",
                   transition: "color 0.3s",
                   fontSize: "1.1rem",
@@ -257,7 +257,7 @@ const Header = () => {
               <Typography
                 sx={{
                   position: "relative",
-                  color: "#616f8e",
+                  color: "#bbc2ce",
                   p: "0.5rem",
                   transition: "color 0.3s",
                   fontSize: "1.1rem",
@@ -300,7 +300,7 @@ const Header = () => {
               <Typography
                 sx={{
                    position: "relative",
-                  color: "#616f8e",
+                  color: "#bbc2ce",
                   p: "0.5rem",
                   transition: "color 0.3s",
                   fontSize: "1.1rem",
@@ -349,11 +349,15 @@ const Header = () => {
            position:  "relative",
           fontFamily: 'Oleo Script', 
           color: '#616f8e',
-          p: '0.5rem',
+          px: '1.5rem',
           transition: 'color 0.3s',
           fontSize: '2.1rem',
           fontWeight: 'bold',
           textTransform: 'uppercase',
+          background: "linear-gradient(120deg, #2EBF70 20.69%, #7644FF 50.19%, #FD4766 79.69%)",
+              backgroundClip:"text",
+              textFillColor: "transparent",
+        
           "::before": {
             content: "''",
             position: "absolute",
